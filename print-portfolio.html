@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreyas Gawade - Graphic Design Portfolio PDF</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dark-mode.css">
+  <style>
+    /* Print-specific optimizations */
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      
+      /* Hide particles canvas */
+      #particlesCanvas {
+        display: none !important;
+      }
+      
+      /* Ensure content prints */
+      main * {
+        visibility: visible !important;
+      }
+      
+      /* Page breaks */
+      .project-card,
+      .intro-section,
+      #projects,
+      #introduction,
+      #thankyou {
+        page-break-inside: avoid;
+      }
+      
+      /* Remove backgrounds for black-and-white printing if needed */
+      /* .hero-section::before, */
+      /* .intro-section::before, */
+      /* .projects-section::before, */
+      /* .thankyou-section::before { */
+        /* background: none !important; */
+      /* } */
+    }
+  </style>
+</head>
+<body>
+  <!-- Particles Canvas - hidden for print -->
+  <canvas id="particlesCanvas" style="display: none;"></canvas>
+  
+  <main>
+    <!-- Section 1: Hero -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1>SHREYAS GAWADE</h1>
+        <span class="hero-title">Graphic Designer & Visual Creative</span>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-explore">Explore My Work</a>
+          <a href="#introduction" class="btn btn-contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section 2: Introduction -->
+    <section id="introduction" class="intro-section">
+      <div class="section-header">
+        <span class="section-tag">ABOUT ME</span>
+        <h2>Introduction</h2>
+      </div>
+      <div class="intro-content">
+        <div class="intro-image">
+          <img src="assets/shreyas-professional-profile.png" alt="Shreyas Gawade professional profile" style="width:100%; max-width:350px; height:auto; object-fit:contain; border-radius:15px; margin:0 auto; display:block;">
+        </div>
+        <div class="intro-text">
+          <h3>Shreyas Gawade</h3>
+          <p class="profession">Graphic Designer & Visual Creative</p>
+          <p>Creative Graphic Designer skilled in making posters, social media posts, and digital illustrations. Familiar with Photoshop, Canva, and Procreate. Eager to learn new skills and create attractive designs.</p>
+          
+          <div class="skills-badges">
+            <span class="badge">Typography & Colour Theory</span>
+            <span class="badge">Layout & Composition</span>
+            <span class="badge">Hand-drawn Illustration</span>
+            <span class="badge">Quick Learner</span>
+            <span class="badge">Team-ready</span>
+          </div>
+          
+          <p class="intro-description">
+            I'm a passionate creative designer who believes in the power of visual storytelling. With hands-on experience in Photoshop for photo editing, Canva for social media creatives, and Procreate for digital illustration, I blend technical skills with artistic vision to create compelling designs that communicate effectively.
+          </p>
+          
+          <div class="contact-info" style="margin-top:2rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.05);">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M2 3h20v2H2V3zm0 4h4v12H2V7zm0 4h16v2H2v-2zm0 4h16v16H2V13z"/>
+              </svg>
+              <span>9527114960</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M4 4.26L2 2c-1.1-.9-2.5-1.3-4.2-.7L.26 4.2C.8.7 2.1.2 4.2.2h15.6l4.2 4.01L19.74 22H4.26zM12 7l-5 4.91L7 14.14l5 4.91 5-4.91L12 7zm0 2l-3.4 3.09L8.53 13 12 9.5 15.47 13l-3.4 3.08L12 11z"/>
+              </svg>
+              <span>shreyasgawade2004@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section 3: Projects -->
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <span class="section-tag">PROJECTS</span>
+        <h2>My Work</h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1: Event Poster Series -->
+        <div class="project-card" onclick="openProjectModal(1)">
+          <div class="project-image" style="background: url('assets/event-poster-01-soundrise.png') center/contain no-repeat;">
+            <div class="project-tech">Poster Design</div>
+          </div>
+          <div class="project-info">
+            <h4>Event Poster Series</h4>
+            <p class="project-desc">Brand posters with clear typography and layout design</p>
+          </div>
+        </div>
+        
+        <!-- Project 2: SONIQ Headphones Campaign -->
+        <div class="project-card" onclick="openProjectModal(2)">
+          <div class="project-image" style="background: url('assets/soniq-headphones-campaign-01.png') center/contain no-repeat;">
+            <div class="project-tech">Social Media</div>
+          </div>
+          <div class="project-info">
+            <h4>SONIQ Headphones Campaign</h4>
+            <p class="project-desc">Cohesive Instagram series for brand identity</p>
+          </div>
+        </div>
+        
+        <!-- Project 3: URBAN INK Illustration Series -->
+        <div class="project-card" onclick="openProjectModal(3)">
+          <div class="project-image" style="background: url('assets/urban-ink-01-samurai.png') center/contain no-repeat;">
+            <div class="project-tech">Digital Art</div>
+          </div>
+          <div class="project-info">
+            <h4>URBAN INK Illustration Series</h4>
+            <p class="project-desc">Hand-drawn style illustrations</p>
+          </div>
+        </div>
+        
+        <!-- Project 4: CINEMATIC COMPOSITES -->
+        <div class="project-card" onclick="openProjectModal(4)">
+          <div class="project-image" style="background: url('assets/cinematic-01-long-ride.png') center/contain no-repeat;">
+            <div class="project-tech">Photo Edit</div>
+          </div>
+          <div class="project-info">
+            <h4>CINEMATIC COMPOSITES</h4>
+            <p class="project-desc">Photoshop editing and manipulation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section 4: Thank You -->
+    <section id="thankyou" class="thankyou-section">
+      <div class="thankyou-content">
+        <div class="thankyou-text">
+          <h2>Thank You!</h2>
+          <p>Thank you for taking the time to explore my creative portfolio. I'm excited about the opportunity to bring my creativity and fresh perspective to your design team. Feel free to reach out, and let's create something amazing together!</p>
+          <a href="#hero" class="btn">Go Home</a>
+        </div>
+        <div class="thankyou-symbol">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="80" height="80">
+            <path d="M12 3l6.06 5.63-1.43 2.86L21 8.96l-3.99 1.98-.01.09L12 21 5.06 17.13l-1.42-2.86L3 9.96l3.98-1.98.01-.08L12 3zm-6.1 6.1L8 10l2 2.93 2.38-1.22L12 5l-3.62 3.36L5 10l3.06 2.72L5.9 13.77 10.9 9.28L12 5zm14.7 5.18l-1.67-3.33.98-2.05-2.68.36L26 12l-1.16 2.26.09.98-.91 2.33L24 19.58l-2.86.85L21.9 24l1.65-3.36.99 2.06 2.65-.37L24 12z"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modalBody">
+        <!-- Content loaded via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Reduced motion preference for print
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    // Initialize project modal
+    function initProjectModal() {
+      const modal = document.getElementById('projectModal');
+      const modalBody = document.getElementById('modalBody');
+      const closeBtn = modal.querySelector('.close-btn');
+      
+      const projectsData = [
+        {
+          title: 'Event Poster Series',
+          description: 'Poster designs promoting events with clear typography and strong visual hierarchy. Created in Adobe Photoshop focusing on layout composition and colour theory to attract target audiences.',
+          tags: ['Photoshop', 'Typography', 'Layout', 'Poster Design'],
+          image: 'assets/event-poster-01-soundrise.png',
+          overview: 'Designed event posters that combine strong typography with compelling visual hierarchy. Each poster balances promotional information with artistic expression, ensuring readability and visual impact.',
+          challenge: 'Creating posters that stand out in crowded advertising spaces while maintaining clear communication of event details. Needed to capture attention within seconds of viewing.',
+          approach: 'Used Adobe Photoshop to experiment with typography hierarchy, colour palettes, and layout compositions. Tested multiple variations to find the optimal balance between aesthetic appeal and readability.',
+          results: 'Posters that effectively attract target audiences and communicate event information clearly. Demonstrated mastery of Photoshop tools and design principles.',
+          technologies: ['Adobe Photoshop', 'Typography', 'Colour Theory', 'Layout Design'],
+          images: [
+            'assets/event-poster-01-soundrise.png',
+            'assets/event-poster-02-autoexpo.png',
+            'assets/event-poster-03-creative-atelier.png'
+          ]
+        },
+        {
+          title: 'Social Media Brand Posts',
+          description: 'Cohesive Instagram post series created in Canva and Photoshop. Designed with consistent colour palette and typography to build brand identity and engage followers across multiple platforms.',
+          tags: ['Canva', 'Photoshop', 'Social Media', 'Branding'],
+          image: 'assets/soniq-headphones-campaign-01.png',
+          overview: 'Created a cohesive Instagram post series that establishes consistent brand identity across multiple platforms. Designed with careful attention to colour palette, typography, and visual style.',
+          challenge: 'Maintaining brand consistency across multiple posts while keeping each unique enough to remain engaging. needed to optimize for different platform specifications.',
+          approach: 'Used Canva for efficient multi-post creation and Photoshop for detailed customization. Developed a consistent visual language including colour palette, typography, and graphic elements that could be applied across all posts.',
+          results: 'Increased follower engagement and brand recognition. Demonstrated ability to create consistent, platform-optimized social media content.',
+          technologies: ['Canva', 'Photoshop', 'Social Media Strategy', 'Brand Identity'],
+          images: [
+            'assets/soniq-headphones-campaign-01.png',
+            'assets/soniq-headphones-campaign-02.png',
+            'assets/soniq-headphones-campaign-03.png'
+          ]
+        },
+        {
+          title: 'Procreate Illustration',
+          description: 'Hand-drawn style digital illustrations created in Procreate. Exploring character design and artistic expression, blending traditional drawing techniques with digital tools to create unique visual content.',
+          tags: ['Procreate', 'Illustration', 'Digital Art', 'Drawing'],
+          image: 'assets/urban-ink-01-samurai.png',
+          overview: 'Created hand-drawn style digital illustrations using Procreate, exploring character design and artistic expression. Blends traditional drawing techniques with digital tools to produce unique visual content.',
+          challenge: 'Translating traditional artistic skills to a digital medium while maintaining the organic feel of hand-drawn work. Needed to find the right balance between digital efficiency and artistic authenticity.',
+          approach: 'Used Procreate\'s extensive brush library and tools to mimic traditional media textures and techniques. Experimented with different styles and subjects to develop a unique digital illustration voice.',
+          results: 'Unique hand-digital illustrations that maintain artistic integrity while leveraging digital tools. Demonstrated proficiency in Procreate and digital art fundamentals.',
+          technologies: ['Procreate', 'Digital Illustration', 'Character Design', 'Digital Painting'],
+          images: [
+            'assets/urban-ink-01-samurai.png',
+            'assets/urban-ink-02-neon-tiger.png',
+            'assets/urban-ink-03-cosmic-explorer.png',
+            'assets/urban-ink-04-cyberpunk.png'
+          ]
+        },
+        {
+          title: 'Image Manipulation',
+          description: 'Photo editing and enhancement projects in Adobe Photoshop. Working with adjustment layers, colour grading, and selective edits to transform ordinary images into compelling visual stories.',
+          tags: ['Photoshop', 'Photo Editing', 'Manipulation', 'Creative Retouching'],
+          image: 'assets/cinematic-01-long-ride.png',
+          overview: 'Photo editing and enhancement projects using Adobe Photoshop. Focuses on working with adjustment layers, colour grading, and selective edits to transform ordinary images into compelling visual stories.',
+          challenge: 'Achieving specific visual aesthetics while maintaining image quality and realism. Needed to balance creative experimentation with technical proficiency in Photoshop tools.',
+          approach: 'Used Photoshop\'s adjustment layers, filters, and selection tools to carefully enhance and manipulate images. Experimented with different colour grading techniques and editing workflows to achieve desired results.',
+          results: 'Transformed ordinary images into compelling visual stories demonstrating advanced Photoshop skills. Showcased ability to work with complex editing techniques while maintaining natural-looking results.',
+          technologies: ['Adobe Photoshop', 'Photo Manipulation', 'Colour Grading', 'Retouching'],
+          images: [
+            'assets/cinematic-01-long-ride.png',
+            'assets/cinematic-02-last-samurai.png',
+            'assets/cinematic-03-tokyo-drive.png',
+            'assets/cinematic-04-coastal-escape.png'
+          ]
+        }
+      ];
+      
+      function openProjectModal(index) {
+        const project = projectsData[index - 1];
+        const imagesHtml = project.images.map(img => `
+          <div style="margin: 1rem 0; border-radius: 8px; overflow: hidden;">
+            <img src="${img}" alt="${project.title} detail" style="width: 100%; height: auto; object-fit: contain;">
+          </div>
+        `).join('');
+        
+        modalBody.innerHTML = `
+          <div class="project-modal-content">
+            <div class="project-modal-images">
+              ${imagesHtml}
+            </div>
+            <div class="project-modal-details">
+              <h3>${project.title}</h3>
+              <div class="project-modal-tags">
+                ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+              </div>
+              <p>${project.description}</p>
+              <div class="project-modal-section">
+                <h4>Overview</h4>
+                <p>${project.overview}</p>
+              </div>
+              <div class="project-modal-section">
+                <h4>Challenge</h4>
+                <p>${project.challenge}</p>
+              </div>
+              <div class="project-modal-section">
+                <h4>Approach</h4>
+                <p>${project.approach}</p>
+              </div>
+              <div class="project-modal-section">
+                <h4>Results</h4>
+                <p>${project.results}</p>
+              </div>
+              <div class="project-modal-section">
+                <h4>Technologies</h4>
+                <p>${project.technologies.join(', ')}</p>
+              </div>
+            </div>
+          </div>
+        `;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeProjectModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+      
+      document.querySelectorAll('.project-card').forEach((card, index) => {
+        card.addEventListener('click', () => openProjectModal(index + 1));
+      });
+      
+      closeBtn.addEventListener('click', closeProjectModal);
+      
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeProjectModal();
+        }
+      });
+      
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'flex') {
+          closeProjectModal();
+        }
+      });
+    }
+    
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', () => {
+      initProjectModal();
+    });
+  </script>
+</body>
+</html>
